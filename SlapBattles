@@ -916,6 +916,13 @@ Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there
 Tab:AddLabel("------------------------------[ End ]------------------------------")
 
 Tab1:AddButton({
+	Name = "Slap Farm",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/slapfarmgui/main/main.lua'))()
+  	end    
+})
+
+Tab1:AddButton({
 	Name = "Backup",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
