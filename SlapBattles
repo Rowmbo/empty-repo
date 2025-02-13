@@ -24,7 +24,7 @@ game:GetService("GuiService"):ClearError()
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 if game.PlaceId == 6403373529 or game.PlaceId == 9015014224 then
-local Window = OrionLib:MakeWindow({IntroText = "Welcome To Rowmbo Hub ", IntroIcon = "rbxassetid://9011713775",Name = ("🙊Rowmbo Hub🙊 - Slap Battles".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, IntroEnabled = true, ConfigFolder = "slap battles"})
+local Window = OrionLib:MakeWindow({IntroText = "Welcome To Rowmbo Hub ", IntroIcon = "rbxassetid://15315284749",Name = ("🙊Rowmbo Hub🙊 | Slap Battles".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, IntroEnabled = true, ConfigFolder = "slap battles"})
 
 ---Bypass----
 
@@ -914,6 +914,13 @@ Tab:AddParagraph("[ Lucky ]","[ If you are lucky enough to survive the banned th
 Tab:AddParagraph("[ Tired ]","I'm Very Tired of Script and Script Update is slow. Please forgive me because I update slowly")
 Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there is a problem when creating a feature but no one testing no one can help me see if it works | I'm really sorry that I couldn't do the feature and it all failed and didn't work | I hope everyone understands me")
 Tab:AddLabel("------------------------------[ End ]------------------------------")
+
+Tab1:AddButton({
+	Name = "KYkyryzoB Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/KykyryzoB/KykyryzoB-Hub-SB/main/KykryzoB.lua"))()
+  	end    
+})
 
 Tab1:AddButton({
 	Name = "Slap Farm",
