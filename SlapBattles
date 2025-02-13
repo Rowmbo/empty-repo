@@ -10899,9 +10899,9 @@ for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
                             elseif GloveExtendOption == "North Korea Wall" then
                             v:FindFirstChild("Glove").Size = Vector3.new(_G.GloveExtendReach,0,_G.GloveExtendReach)
                             elseif GloveExtendOption == "Slight Extend" then
-                            v:FindFirstChild("Glove").Size = Vector3.new(3, 3, 3.7)
+                            v:FindFirstChild("Glove").Size = Vector3.new(1000000, 1000000, 10000000.7)
                             end
-                            v:FindFirstChild("Glove").Transparency = 0.5
+                            v:FindFirstChild("Glove").Transparency = 0
                         end
                     end
                 end
