@@ -10899,7 +10899,7 @@ for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
                             elseif GloveExtendOption == "North Korea Wall" then
                             v:FindFirstChild("Glove").Size = Vector3.new(_G.GloveExtendReach,0,_G.GloveExtendReach)
                             elseif GloveExtendOption == "Slight Extend" then
-                            v:FindFirstChild("Glove").Size = Vector3.new(1000000, 1000000, 10000000.7)
+                            v:FindFirstChild("Glove").Size = Vector3.new(100000, 100000, 10000000)
                             end
                             v:FindFirstChild("Glove").Transparency = 0
                         end
@@ -10918,7 +10918,7 @@ for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
                             elseif GloveExtendOption == "North Korea Wall" then
                             v:FindFirstChild("Glove").Size = Vector3.new(_G.GloveExtendReach,0,_G.GloveExtendReach)
                             elseif GloveExtendOption == "Slight Extend" then
-                            v:FindFirstChild("Glove").Size = Vector3.new(3, 3, 3.7)
+                            v:FindFirstChild("Glove").Size = Vector3.new(100000, 100000, 10000000)
                             end
                             v:FindFirstChild("Glove").Transparency = 0.5
                         end
@@ -10932,7 +10932,7 @@ if game.Players.LocalPlayer:WaitForChild("Backpack"):FindFirstChildOfClass("Tool
 for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
                     if v:IsA("Tool") and v.Name ~= "Radio" then
                         if v:FindFirstChild("Glove") ~= nil then
-                            v:FindFirstChild("Glove").Size = Vector3.new(2.5, 2.5, 1.7)
+                            v:FindFirstChild("Glove").Size = Vector3.new(100000, 100000, 10000000)
                             v:FindFirstChild("Glove").Transparency = 0
                         end
                     end
