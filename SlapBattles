@@ -916,6 +916,13 @@ Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there
 Tab:AddLabel("------------------------------[ End ]------------------------------")
 
 Tab1:AddButton({
+	Name = "Boxer Slap Farm",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/IncognitoScripts/SlapFarmScript/refs/heads/main/BoxerFarmRework"))()
+  	end    
+})
+
+Tab1:AddButton({
 	Name = "Synapse X [ PE Delta ]",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/delta-hydro/secret-host-haha/main/syn_ui_new.lua"))()
