@@ -916,6 +916,13 @@ Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there
 Tab:AddLabel("------------------------------[ End ]------------------------------")
 
 Tab1:AddButton({
+	Name = "❤️",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1'))()
+  	end    
+})
+
+Tab1:AddButton({
 	Name = "KYkyryzoB Hub",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/KykyryzoB/KykyryzoB-Hub-SB/main/KykryzoB.lua"))()
