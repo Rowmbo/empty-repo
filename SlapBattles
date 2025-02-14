@@ -918,7 +918,7 @@ Tab:AddLabel("------------------------------[ End ]-----------------------------
 Tab1:AddButton({
 	Name = "Mastery Script",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonjoScripts/Public-Scripts/refs/heads/Slap-Battles/Mastery-Glove"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonjoScripts/Public-Scripts/refs/heads/Slap-Battles/Mastery-HelperGui"))()
 	end    
 })
 
