@@ -916,6 +916,13 @@ Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there
 Tab:AddLabel("------------------------------[ End ]------------------------------")
 
 Tab1:AddButton({
+	Name = "Mace Mastery Script",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/DonjoScripts/Public-Scripts/refs/heads/Slap-Battles/Mace-Mastery.lua'),true))() --Requires macee
+	end    
+})
+
+Tab1:AddButton({
 	Name = "Kill All",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IncognitoScripts/SlapBattles/refs/heads/main/ServerDestroyer"))()
