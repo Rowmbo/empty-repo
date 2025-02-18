@@ -932,12 +932,12 @@ game:GetService("ReplicatedStorage").Timestop:FireServer()
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 
 task.wait(8)
-fireclickdetector(game:GetService("Workspace").Lobby.Bus.ClickDetector)
+fireclickdetector(game:GetService("Workspace").Lobby.bus.ClickDetector)
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Lobby.Teleport1.CFrame
 task.wait(1)
 for i = 1, 75000 do
-        game:GetService("ReplicatedStorage").Bus:FireServer()
+        game:GetService("ReplicatedStorage").busmoment:FireServer()
 end
 wait(2)
 --[[ This script isn't mine but idk how to create one so i use this instead ]]-- 
