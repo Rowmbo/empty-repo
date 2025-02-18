@@ -24,7 +24,7 @@ game:GetService("GuiService"):ClearError()
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 if game.PlaceId == 6403373529 or game.PlaceId == 9015014224 then
-local Window = OrionLib:MakeWindow({IntroText = "Welcome To Rowmbo Hub ", IntroIcon = "rbxassetid://5608330602",Name = ("🙊Rowmbo Hub🙊 | Slap Battles".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, IntroEnabled = true, ConfigFolder = "slap battles"})
+local Window = OrionLib:MakeWindow({IntroText = "Welcome To Rowmbo Hub ", IntroIcon = "rbxassetid://11822128593",Name = ("🙊Rowmbo Hub🙊 | Slap Battles".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, IntroEnabled = true, ConfigFolder = "slap battles"})
 
 ---Bypass----
 
@@ -918,7 +918,7 @@ Tab:AddLabel("------------------------------[ End ]-----------------------------
 Tab1:AddButton({
 	Name = "instant bob script need 60k+",
 	Callback = function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/DonjoScripts/Public-Scripts/refs/heads/Slap-Battles/Mace-Mastery.lua'),true))() --Requires macee
+		loadstring(game:HttpGet"https://pastefy.app/7qbY4h0Z/raw")()
 	end    
 })
 
