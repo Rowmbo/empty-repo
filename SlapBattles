@@ -1342,28 +1342,6 @@ end
 })
 
 Tab3:AddDropdown({
-	Name = "Glove",
-	Default = "",
-	Options = {"Show All","Off Show All","Teleport Enter","Teleport Portal","Teleport Bob Plushie","get mouse"},
-	Callback = function(Value)
-if Value == "Show All" then
-game.ReplicatedStorage.RepressedMemoriesMap.Parent = game.Workspace
-elseif Value == "Off Show All" then
-game.Workspace.RepressedMemoriesMap.Parent = game.ReplicatedStorage
-elseif Value == "Teleport Enter" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.RepressedMemories.Limbo.CFrame * CFrame.new(0,-5,0)
-elseif Value == "Teleport Portal" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.RepressedMemories.SimonSaysGate.Portal.CFrame
-elseif Value == "Teleport Bob Plushie" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.RepressedMemories._ugcQuestObjectBobPlushie.Handle.CFrame
-elseif Value == "get mouse" then
-loadstring(game:HttpGet("https://pastefy.app/mW6SplbD/raw"))()
-end
-end
-	end    
-})
-
-Tab3:AddDropdown({
 	Name = "Repressed Memory",
 	Default = "",
 	Options = {"Show All","Off Show All","Teleport Enter","Teleport Portal","Teleport Bob Plushie","Click Bob Plushie [ Quests Hitman ]"},
