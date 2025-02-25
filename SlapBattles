@@ -1035,7 +1035,82 @@ module:Teleport(game.PlaceId)
 Tab1:AddButton({
 	Name = "instant bob script need 60k+",
 	Callback = function()
-		loadstring(game:HttpGet"https://pastefy.app/7qbY4h0Z/raw")()
+		-- Create the GUI
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player.PlayerGui
+screenGui.ResetOnSpawn = false
+
+-- Create a frame to hold the buttons
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 200, 0, 300)
+frame.Position = UDim2.new(0, 10, 0, 10)
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BackgroundTransparency = 0.5
+frame.Parent = screenGui
+
+-- Create a title label for the GUI
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(0, 200, 0, 50)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.Text = "Game Script GUI"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1
+title.TextSize = 18
+title.Parent = frame
+
+-- Create a button to trigger the specific script
+local specialActionButton = Instance.new("TextButton")
+specialActionButton.Size = UDim2.new(0, 180, 0, 50)
+specialActionButton.Position = UDim2.new(0, 10, 0, 60)
+specialActionButton.Text = "Run Special Action"
+specialActionButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+specialActionButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+specialActionButton.TextSize = 14
+specialActionButton.Parent = frame
+
+-- Function to handle the special action when the button is pressed
+specialActionButton.MouseButton1Click:Connect(function()
+    -- Check if the game is loaded
+    if not game:IsLoaded() then
+        game.Loaded:Wait()
+    end
+
+    -- Check if the player has the badge
+    if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2125950512) then
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "Nice!", 
+            Text = "Congratulations, you got bob ;)", 
+            Duration = 1000, 
+            Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150", 
+            Button1 = "OK"
+        })
+        fireclickdetector(game:GetService("Workspace").Lobby.bob.ClickDetector)
+        return 
+    end
+
+    -- Default interaction if the player doesn't have the badge
+    fireclickdetector(workspace.Lobby["God's Hand"].ClickDetector)
+    task.wait(.3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Lobby.Teleport1.CFrame
+    wait(1)
+    game:GetService("ReplicatedStorage").TimestopJump:FireServer()
+    game:GetService("ReplicatedStorage").Timestopchoir:FireServer()
+    game:GetService("ReplicatedStorage").Timestop:FireServer()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+    -- Continue with the script
+    task.wait(8)
+    fireclickdetector(game:GetService("Workspace").Lobby.Replica.ClickDetector)
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Lobby.Teleport1.CFrame
+    task.wait(1)
+    for i = 1, 75000 do
+        game:GetService("ReplicatedStorage").Duplicate:FireServer(unpack({[1] = true}))
+    end
+    wait(2)
+end)
+
 	end    
 })
 
