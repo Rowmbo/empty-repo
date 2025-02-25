@@ -914,11 +914,10 @@ Tab:AddParagraph("[ Lucky ]","[ If you are lucky enough to survive the banned th
 Tab:AddParagraph("[ Tired ]","I'm Very Tired of Script and Script Update is slow. Please forgive me because I update slowly")
 Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there is a problem when creating a feature but no one testing no one can help me see if it works | I'm really sorry that I couldn't do the feature and it all failed and didn't work | I hope everyone understands me")
 Tab:AddLabel("------------------------------[ End ]------------------------------")
-
 Tab7:AddButton({
-	Name = "gojo blackhole press Q",
+	Name = "gojo blackhole script press Q",
 	Callback = function()
-local UserInputService = game:GetService("UserInputService")
+		local UserInputService = game:GetService("UserInputService")
 
 -- Replace with your key of choice
 local keyToPress = Enum.KeyCode.Q  -- Change 'Q' to whichever key you want
@@ -932,9 +931,8 @@ UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
     game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
     end
 end)
-		if not game:IsLoaded() then
-		game.Loaded:Wait()	
-end
+	end    
+})
 
 Tab1:AddButton({
 	Name = "spam bus kicks you",
