@@ -916,7 +916,7 @@ Tab:AddParagraph("[ Script Giang ]","This script was created by Giang, but there
 Tab:AddLabel("------------------------------[ End ]------------------------------")
 
 Tab1:AddButton({
-	Name = "Testing",
+	Name = "spam bus kicks you",
 	Callback = function()
 		if not game:IsLoaded() then
      game.Loaded:Wait()
@@ -1661,6 +1661,13 @@ fireclickdetector(workspace.Retro.Map.RetroObbyMap:GetChildren()[5].StaffApp.But
 else
 fireclickdetector(workspace.Retro.Map.RetroObbyMap:GetChildren()[5].StaffApp.Button.ClickDetector)
 end
+  	end    
+})
+
+Tab3:AddButton({
+	Name = "Inf yield",
+	Callback = function()
+      	loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("75888f2af80741f5ee17f9bdcc7373d4")
   	end    
 })
 
