@@ -1,6 +1,13 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
+local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/GameList.lua"))()
+
+for PlaceID, Execute in pairs(Games) do
+    if PlaceID == game.PlaceId then
+        loadstring(game:HttpGet(Execute))()
+    end
+end
 
 if _G.AutoExecuter == true then
 local ScriptSpawnSlap = queueonteleport or queue_on_teleport
